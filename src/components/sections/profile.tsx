@@ -1,7 +1,7 @@
 import React from "react";
-import { Card } from "./ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Separator } from "./ui/separator";
+import { Card } from "../ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Separator } from "../ui/separator";
 import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 import { CloudDownload } from "lucide-react";
