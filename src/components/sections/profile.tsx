@@ -5,6 +5,7 @@ import { Separator } from "../ui/separator";
 import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 import { CloudDownload } from "lucide-react";
+import { ModeToggle } from "../theme-switch";
 
 const SOCIAL_LINKS = [
   {
@@ -20,14 +21,17 @@ const SOCIAL_LINKS = [
 const Profile = () => {
   return (
     <Card className="p-[20px] gap-4">
-      <div className="flex items-center flex-row gap-4">
-        <Avatar className="size-10">
-          <AvatarImage src="https://github.com/shadcn.png" alt="shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-        <span className="tracking-tight text-16 text-content-primary">
-          Dhruva Raval
-        </span>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center flex-row gap-4">
+          <Avatar className="size-10">
+            <AvatarImage src="https://github.com/shadcn.png" alt="shadcn" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          <span className="tracking-tight text-16 text-content-primary">
+            Dhruva Raval
+          </span>
+        </div>
+        <ModeToggle />
       </div>
       <div className="flex flex-col gap-1">
         <span className="text-15 text-muted-foreground">

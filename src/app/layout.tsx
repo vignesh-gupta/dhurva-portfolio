@@ -18,7 +18,8 @@ export default function RootLayout({
       <body className={`${GeistSans.className} antialiased bg-secondary`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
+          enableSystem
           disableTransitionOnChange
         >
           {children}
