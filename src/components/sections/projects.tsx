@@ -47,7 +47,7 @@ const Projects = () => {
         <h3 className="tracking-tight font-medium text-lg">Works</h3>
       </CardHeader>
       <ScrollArea className="h-11/12">
-        <CardContent className="grid grid-cols-2 gap-4 p-4">
+        <CardContent className="grid md:grid-cols-2 gap-4 p-4">
           {PROJECTS.map((project, i) => (
             <ProjectCard key={`project-${project.title}-${i}`} {...project} />
           ))}
